@@ -15,7 +15,8 @@ const CertificationsSection = () => {
       issuer: "Infosys Springboard",
       category: "AI/ML",
       year: "2024",
-      image: infosysCert
+      image: infosysCert,
+      link: "https://drive.google.com/file/d/1qh7rXbi8Ggry_mZtcD3ZMJ8CMfIyvXxI/view?usp=sharing"
     },
     {
       title: "Principles of Generative AI",
