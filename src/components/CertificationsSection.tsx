@@ -2,6 +2,7 @@ import { Award, ExternalLink, CheckCircle } from 'lucide-react';
 import tcsIonCert from '@/assets/tcs-ion-cert.png';
 import udemyCert from '@/assets/udemy-cert.png';
 import awsCert from '@/assets/aws-cert.png';
+import oracleCert from '@/assets/oracle-cert.png';
 import linkedinCert from '@/assets/linkedin-cert.png';
 import googleCert from '@/assets/google-cert.png';
 import internshalaCert from '@/assets/internshala-cert.png';
@@ -19,6 +20,22 @@ const CertificationsSection = () => {
       link: "https://drive.google.com/file/d/1HEDPx37p9s4KG_4_Ebrn1FUgTTjJfwd7/view?usp=sharing"
     },
     {
+      title: "Python Foundation",
+      issuer: "Infosys Springboard",
+      category: "AI/ML",
+      year: "2024",
+      image: infosysCert,
+      link: "https://drive.google.com/file/d/1x4VWXUFKBeV1f2D74TxJSeQ8s1szKZn4/view?usp=sharing"
+    },
+    {
+      title: "Java Foundation",
+      issuer: "Infosys Springboard",
+      category: "AI/ML",
+      year: "2024",
+      image: infosysCert,
+      link: "https://drive.google.com/file/d/1aNnQPzlCAl14IEORwFh9W46y0f02xnR9/view?usp=sharing"
+    },
+    {
       title: "Principles of Generative AI",
       issuer: "Infosys Springboard", 
       category: "AI/ML",
@@ -27,12 +44,20 @@ const CertificationsSection = () => {
       link: "https://drive.google.com/file/d/1n2HwyMaBCgdWE3qjaV7QksY4X9Ot22sI/view?usp=sharing"
     },
     {
+      title: "Oracle AI Vector Search Certified Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1kgJc2K9O9QNgrtqROjjdlcq7IiIY0t4c/view?usp=sharing"
+    },
+    {
       title: "Enhancing Soft Skills and Personality",
       issuer: "NPTEL",
       category: "Professional Development",
       year: "2024",
       image: nptelCert,
-      link: "https://drive.google.com/file/d/1HEDPx37p9s4KG_4_Ebrn1FUgTTjJfwd7/view?usp=sharing"
+      link: ""
     },
     {
       title: "Android App Development",
