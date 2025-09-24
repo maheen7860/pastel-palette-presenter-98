@@ -16,63 +16,71 @@ const CertificationsSection = () => {
       category: "AI/ML",
       year: "2024",
       image: infosysCert,
-      link: "https://drive.google.com/file/d/1qh7rXbi8Ggry_mZtcD3ZMJ8CMfIyvXxI/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1HEDPx37p9s4KG_4_Ebrn1FUgTTjJfwd7/view?usp=sharing"
     },
     {
       title: "Principles of Generative AI",
       issuer: "Infosys Springboard", 
       category: "AI/ML",
       year: "2024",
-      image: infosysCert
+      image: infosysCert,
+      link: "https://drive.google.com/file/d/1n2HwyMaBCgdWE3qjaV7QksY4X9Ot22sI/view?usp=sharing"
     },
     {
       title: "Enhancing Soft Skills and Personality",
       issuer: "NPTEL",
       category: "Professional Development",
       year: "2024",
-      image: nptelCert
+      image: nptelCert,
+      link: "https://drive.google.com/file/d/1HEDPx37p9s4KG_4_Ebrn1FUgTTjJfwd7/view?usp=sharing"
     },
     {
       title: "Android App Development",
       issuer: "Internshala",
       category: "Mobile Development",
       year: "2024",
-      image: internshalaCert
+      image: internshalaCert,
+      link: "https://drive.google.com/file/d/1btDWxrg6hy88RWq1GOpZ1f08yegycRBp/view?usp=sharing"
     },
     {
       title: "Google Analytics",
       issuer: "Google",
       category: "Analytics",
       year: "2024",
-      image: googleCert
+      image: googleCert,
+      link: "https://drive.google.com/file/d/1Q_ND480TWg0jsXFZUplc_ln5OKNpfPQB/view?usp=sharing"
     },
     {
       title: "Generative AI",
       issuer: "LinkedIn",
       category: "AI/ML",
       year: "2024",
-      image: linkedinCert
+      image: linkedinCert,
+      link: "https://drive.google.com/file/d/1YF7mI7HFXiD02rURS_iIZIyqtIEqTspU/view?usp=sharing"
     },
     {
       title: "Solution Architecture",
       issuer: "AWS",
       category: "Cloud Computing",
       year: "2024",
-      image: awsCert
+      image: awsCert,
+      link: "https://drive.google.com/file/d/1cSNppIrrIAXq5RBRQgOGlZq1cvUPXWz2/view?usp=sharing"
     },
     {
       title: "Database with Python",
       issuer: "Udemy",
       category: "Programming",
       year: "2024",
-      image: udemyCert
+      image: udemyCert,
+      link: "https://drive.google.com/file/d/18-BcraIOFhcttLUcr14pd2fgkPbI_bj7/view?usp=sharing"
     },
     {
       title: "Business Etiquette",
       issuer: "TCS iON",
       category: "Professional Development",
       year: "2024",
-      image: tcsIonCert
+      image: tcsIonCert,
+      link: "https://drive.google.com/file/d/1O5vuIrDaZr0TU933EasTrakH1JV-Q8Z1/view?usp=sharing"
     }
   ];
 
