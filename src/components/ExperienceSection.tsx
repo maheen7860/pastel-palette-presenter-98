@@ -64,7 +64,7 @@ const ExperienceSection = () => {
                   
                   <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-foreground/70">
                     <div className="flex items-center gap-2">
-                      <Building2 size={16} />
+                      <Building2 size={14} />
                       <span className="font-medium">{experience.company}</span>
                     </div>
                     <div className="flex items-center gap-2">
