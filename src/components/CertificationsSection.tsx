@@ -140,9 +140,11 @@ const CertificationsSection = () => {
                       {cert.category}
                     </span>
                     
-                    <button className="text-primary hover:text-primary/80 transition-colors group/btn">
+                    <button 
+                      onClick={() => window.open(cert.link, "_blank")}
+                      className="text-primary hover:text-primary/80 transition-colors group/btn">
                       <ExternalLink size={16} className="group-hover/btn:scale-110 transition-transform" />
-                    </button>
+                      </button>
                   </div>
                 </div>
 
