@@ -57,7 +57,7 @@ const ExperienceSection = () => {
                       {experience.title}
                     </button>
                     <div className="flex items-center gap-2 text-primary font-medium">
-                      <Calendar size={16} />
+                      <Calendar size={14} />
                       <span className="text-sm">{experience.period}</span>
                     </div>
                   </div>
