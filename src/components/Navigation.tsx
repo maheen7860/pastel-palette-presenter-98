@@ -24,6 +24,7 @@ const Navigation = () => {
       const sections = navItems.map(item => document.getElementById(item.id));
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
+
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         if (section && section.offsetTop <= scrollPosition) {
@@ -43,7 +44,6 @@ const Navigation = () => {
       return;
     }
     
-    setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -57,7 +57,23 @@ const Navigation = () => {
     }`}>
       <div className="px-6 py-3 rounded-full">
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">          
+        <div className="hidden md:flex items-center space-x-6">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className={`relative px-3 py-2 text-xs font-medium transition-all duration-300 ${
+                activeSection === item.id
+                  ? 'text-primary'
+                  : 'text-foreground/70 hover:text-primary'
+              }`}
+            >
+              {item.label}
+              {activeSection === item.id && (
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-primary rounded-full" />
+              )}
+            </button>
+          ))}
           <button
             onClick={() => scrollToSection('calligraphy')}
             className="relative px-3 py-2 text-xs font-medium text-foreground/70 hover:text-primary transition-all duration-300"
@@ -80,6 +96,19 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-md rounded-2xl border border-white/20 shadow-elegant">
             <div className="p-4 space-y-2">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`block w-full text-left px-4 py-3 rounded-xl text-xs font-medium transition-all duration-300 ${
+                    activeSection === item.id
+                      ? 'text-primary bg-primary/10'
+                      : 'text-foreground/70 hover:text-primary hover:bg-primary/5'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
               <button
                 onClick={() => scrollToSection('calligraphy')}
                 className="block w-full text-left px-4 py-3 rounded-xl text-xs font-medium text-foreground/70 hover:text-primary hover:bg-primary/5 transition-all duration-300"
