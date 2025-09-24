@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Instagram, ArrowLeft, ExternalLink, Sparkles, Heart, Palette, Quote, Crown, Flower2 } from 'lucide-react';
+import { Instagram, ArrowLeft, ExternalLink, Sparkles, Heart, Palette, Quote, Crown, Flower2, ChevronRight } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import calligraphy1 from '@/assets/calligraphy-1.jpg';
 import calligraphy2 from '@/assets/calligraphy-2.jpg';
@@ -82,83 +82,131 @@ const CalligraphyPortfolio = () => {
     : featuredWorks.filter(work => work.style === activeStyle);
 
   return (
-    <div className="min-h-screen bg-gradient-background">
-      {/* Simplified Navigation - Only back button */}
+    <div className="min-h-screen bg-gradient-to-br from-pink-50/40 via-rose-50/30 to-purple-50/40">
+      <Navigation />
       
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 relative overflow-hidden fade-in-section">
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-50/30 via-rose-50/20 to-pink-100/30" />
-        <div className="absolute top-20 left-10 w-32 h-32 bg-pink-200/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-rose-200/20 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }} />
+      {/* Elegant Hero Section */}
+      <section className="pt-32 pb-20 relative overflow-hidden fade-in-section">
+        {/* Sophisticated Background */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-pink-100/50 via-rose-100/40 to-purple-100/50" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-pink-200/30 via-transparent to-transparent" />
+          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-rose-200/30 via-transparent to-transparent" />
+        </div>
+        
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 w-40 h-40 bg-gradient-to-br from-pink-300/20 to-rose-300/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-40 right-20 w-32 h-32 bg-gradient-to-br from-purple-300/20 to-pink-300/20 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-40 left-1/4 w-24 h-24 bg-gradient-to-br from-rose-300/20 to-pink-300/20 rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }} />
         
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             <button 
               onClick={goHome}
-              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8 group"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm border border-white/40 text-pink-700 hover:text-pink-600 hover:bg-white/80 transition-all duration-300 rounded-full mb-8 group shadow-sm"
             >
-              <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+              <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
               <span className="text-sm font-medium">Back to Portfolio</span>
             </button>
             
-            <div className="mb-6">
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-primary text-white text-xs font-medium rounded-full shadow-soft">
-                <Sparkles size={14} />
-                Calligraphy Artist
+            {/* Elegant Badge */}
+            <div className="mb-8">
+              <span className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500 text-white text-sm font-medium rounded-full shadow-lg backdrop-blur-sm">
+                <Sparkles size={16} className="animate-pulse" />
+                Calligraphy Artist & Designer
+                <Heart size={16} />
               </span>
             </div>
             
-            <h1 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
-              <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
-                Dreamy Dairy
-              </span>
-              <br />
-              <span className="text-2xl md:text-3xl font-medium">Calligraphy & Hand Lettering</span>
-            </h1>
+            {/* Beautiful Title */}
+            <div className="mb-8">
+              <h1 className="text-4xl md:text-6xl font-serif font-bold mb-4">
+                <span className="bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 bg-clip-text text-transparent drop-shadow-sm">
+                  Dreamy Dairy
+                </span>
+              </h1>
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-pink-400 to-rose-400 rounded-full" />
+                <Flower2 className="w-5 h-5 text-pink-500" />
+                <div className="w-16 h-0.5 bg-gradient-to-r from-rose-400 via-pink-400 to-transparent rounded-full" />
+              </div>
+              <p className="text-xl md:text-2xl font-serif font-medium text-foreground/80 italic">
+                Where Words Bloom Into Beautiful Art
+              </p>
+            </div>
             
-            <p className="text-base text-foreground/70 max-w-2xl mx-auto leading-relaxed mb-8">
-              Creating beautiful, personalized calligraphy that tells your story through elegant letterforms and artistic expression
+            <p className="text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed mb-10 font-light">
+              Transforming heartfelt words into stunning visual poetry through the ancient art of calligraphy. 
+              Each stroke carries intention, every curve tells a story, and every piece radiates love and authenticity.
             </p>
             
-            <button 
-              onClick={openInstagram}
-              className="btn-hero inline-flex items-center gap-3 group"
-            >
-              <Instagram size={18} />
-              <span>View Instagram Gallery</span>
-              <ExternalLink size={16} className="group-hover:scale-110 transition-transform" />
-            </button>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button 
+                onClick={openInstagram}
+                className="px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-pink-500/25 inline-flex items-center gap-3 group"
+              >
+                <Instagram size={20} />
+                <span>Explore My Gallery</span>
+                <ExternalLink size={18} className="group-hover:scale-110 transition-transform" />
+              </button>
+              <button className="px-8 py-4 bg-white/70 backdrop-blur-sm border border-white/50 text-pink-700 font-medium rounded-full hover:bg-white/90 transition-all duration-300 shadow-md inline-flex items-center gap-3 group">
+                <Heart size={18} />
+                <span>Commission Art</span>
+                <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Style Categories */}
-      <section className="py-16 fade-in-section">
-        <div className="container mx-auto px-6">
+      {/* Elegant Style Categories */}
+      <section className="py-20 fade-in-section relative">
+        {/* Background decoration */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/30 to-transparent" />
+        
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-center text-foreground mb-8">
-              Calligraphy Styles
-            </h2>
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm border border-pink-200/40 text-pink-700 rounded-full text-sm font-medium mb-6">
+                <Palette size={16} />
+                Art Collection
+              </div>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6 bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
+                Signature Calligraphy Styles
+              </h2>
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <div className="w-20 h-0.5 bg-gradient-to-r from-transparent to-pink-400 rounded-full" />
+                <div className="w-6 h-1 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full" />
+                <div className="w-20 h-0.5 bg-gradient-to-r from-rose-400 to-transparent rounded-full" />
+              </div>
+              <p className="text-base text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+                Discover the diverse range of calligraphy styles, each crafted with passion and precision
+              </p>
+            </div>
             
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <div className="flex flex-wrap justify-center gap-3 mb-16">
               <button
                 onClick={() => setActiveStyle('all')}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
+                className={`px-6 py-3 text-sm font-medium rounded-full transition-all duration-300 backdrop-blur-sm ${
                   activeStyle === 'all'
-                    ? 'bg-gradient-primary text-white shadow-soft'
-                    : 'bg-white/50 text-foreground/70 hover:bg-primary/10 hover:text-primary'
+                    ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-lg shadow-pink-500/25'
+                    : 'bg-white/70 border border-white/50 text-pink-700 hover:bg-pink-50 hover:border-pink-200 hover:text-pink-600'
                 }`}
               >
-                All Styles
+                <span className="flex items-center gap-2">
+                  <Sparkles size={14} />
+                  All Masterpieces
+                </span>
               </button>
               {calligraphyStyles.map((style) => (
                 <button
                   key={style.id}
                   onClick={() => setActiveStyle(style.id)}
-                  className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
+                  className={`px-6 py-3 text-sm font-medium rounded-full transition-all duration-300 backdrop-blur-sm ${
                     activeStyle === style.id
-                      ? 'bg-gradient-primary text-white shadow-soft'
-                      : 'bg-white/50 text-foreground/70 hover:bg-primary/10 hover:text-primary'
+                      ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-lg shadow-pink-500/25'
+                      : 'bg-white/70 border border-white/50 text-pink-700 hover:bg-pink-50 hover:border-pink-200 hover:text-pink-600'
                   }`}
                 >
                   {style.name} ({style.count})
@@ -166,49 +214,71 @@ const CalligraphyPortfolio = () => {
               ))}
             </div>
 
-            {/* Featured Works Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Elegant Works Gallery */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredWorks.map((work, index) => (
                 <div 
                   key={index}
-                  className="glass-card rounded-3xl hover:shadow-glow hover:scale-105 transition-all duration-500 group overflow-hidden"
+                  className="group relative overflow-hidden rounded-3xl transition-all duration-700 hover:scale-105 animate-fade-in-up"
+                  style={{animationDelay: `${index * 0.1}s`}}
                 >
-                  {/* Actual Image */}
-                  <div className="relative overflow-hidden">
-                    <img 
-                      src={work.image} 
-                      alt={work.title}
-                      className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <button 
-                        onClick={openInstagram}
-                        className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors"
-                      >
-                        <ExternalLink size={16} className="text-pink-600" />
-                      </button>
+                  {/* Premium Card Design */}
+                  <div className="relative bg-white/80 backdrop-blur-xl border border-white/60 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-700">
+                    
+                    {/* Image Container */}
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={work.image} 
+                        alt={work.title}
+                        className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      {/* Elegant Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      
+                      {/* Floating Action Button */}
+                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        <button 
+                          onClick={openInstagram}
+                          className="w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
+                        >
+                          <ExternalLink size={18} className="text-pink-600 group-hover/btn:scale-110 transition-transform" />
+                        </button>
+                      </div>
+
+                      {/* Style Badge */}
+                      <div className="absolute top-4 left-4">
+                        <span className="px-3 py-1.5 text-xs font-medium bg-white/90 backdrop-blur-sm text-pink-700 rounded-full border border-white/50 shadow-sm">
+                          {calligraphyStyles.find(s => s.id === work.style)?.name}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="p-6 space-y-4">
-                    <h3 className="font-serif font-semibold text-lg text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
-                      {work.title}
-                    </h3>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      {work.description}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="px-3 py-1.5 text-xs font-medium bg-gradient-to-r from-pink-100/80 to-rose-100/80 text-pink-700 rounded-full border border-pink-200/40">
-                        {calligraphyStyles.find(s => s.id === work.style)?.name}
-                      </span>
-                      <button 
-                        onClick={openInstagram}
-                        className="text-pink-600 hover:text-pink-500 transition-colors group/btn"
-                      >
-                        <Instagram size={16} className="group-hover/btn:scale-110 transition-transform" />
-                      </button>
+                    
+                    {/* Content Area */}
+                    <div className="p-6 space-y-4">
+                      <h3 className="font-serif font-bold text-xl text-foreground group-hover:text-pink-600 transition-colors duration-300 leading-tight">
+                        {work.title}
+                      </h3>
+                      <p className="text-sm text-foreground/70 leading-relaxed line-clamp-2">
+                        {work.description}
+                      </p>
+                      
+                      {/* Action Footer */}
+                      <div className="flex items-center justify-between pt-2 border-t border-pink-100/50">
+                        <div className="flex items-center gap-2 text-xs text-pink-600/70">
+                          <Heart size={14} />
+                          <span className="font-medium">Handcrafted with Love</span>
+                        </div>
+                        <button 
+                          onClick={openInstagram}
+                          className="p-2 text-pink-600 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all duration-300 group/btn"
+                        >
+                          <Instagram size={16} className="group-hover/btn:scale-110 transition-transform" />
+                        </button>
+                      </div>
                     </div>
+
+                    {/* Decorative Elements */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-rose-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                   </div>
                 </div>
               ))}
