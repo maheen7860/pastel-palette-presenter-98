@@ -97,19 +97,6 @@ const HeroSection = () => {
               </div>
             </button>
           </div>
-
-          {/* Professional Scroll Indicator */}
-          <div className="animate-fade-in-up stagger-4">
-            <button 
-              onClick={scrollToAbout}
-              className="group flex flex-col items-center text-gray-500 hover:text-pink-600 transition-all duration-300"
-            >
-              <span className="text-xs font-medium mb-2 tracking-wider uppercase">Discover More</span>
-              <div className="p-2.5 rounded-full border-2 border-pink-200 group-hover:border-pink-400 group-hover:bg-pink-50 transition-all duration-300">
-                <ArrowDown size={18} className="animate-bounce group-hover:text-pink-600" />
-              </div>
-            </button>
-          </div>
         </div>
       </div>
 

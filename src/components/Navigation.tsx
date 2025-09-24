@@ -22,7 +22,7 @@ const Navigation = () => {
       
       // Update active section based on scroll position
       const sections = navItems.map(item => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
