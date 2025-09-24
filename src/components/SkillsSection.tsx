@@ -45,10 +45,10 @@ const SkillsSection = () => {
   ];
 
   const languages = [
-    { name: "English", flag: "🇺🇸" },
-    { name: "Tamil", flag: "🇮🇳" },
-    { name: "Hindi", flag: "🇮🇳" },
-    { name: "Urdu", flag: "🇵🇰" }
+    { name: "English", flag: "" },
+    { name: "Tamil", flag: "" },
+    { name: "Hindi", flag: "" },
+    { name: "Urdu", flag: "" }
   ];
 
   return (

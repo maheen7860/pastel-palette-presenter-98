@@ -61,6 +61,7 @@ const CalligraphyPortfolio = () => {
       description: "Colorful motivational artwork with bold geometric patterns",
       image: calligraphy4
     },
+    
     {
       title: "~ you are what you manifest 🪷🌙",
       style: "modern",
