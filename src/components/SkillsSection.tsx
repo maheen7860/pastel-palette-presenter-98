@@ -44,12 +44,6 @@ const SkillsSection = () => {
     }
   ];
 
-  const languages = [
-    { name: "English", flag: "" },
-    { name: "Tamil", flag: "" },
-    { name: "Hindi", flag: "" },
-    { name: "Urdu", flag: "" }
-  ];
 
   return (
     <section id="skills" className="py-20 md:py-32 relative">
@@ -99,31 +93,6 @@ const SkillsSection = () => {
                 <div className="absolute top-2 right-2 w-3 h-3 bg-gradient-to-r from-pink-300/30 to-rose-300/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             ))}
-          </div>
-
-          {/* Languages with Pinkish Theme */}
-          <div className="text-center animate-fade-in-up stagger-3 fade-in-section">
-            <h3 className="font-serif font-semibold text-xl text-foreground mb-6">
-              Languages
-            </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              {languages.map((language, index) => (
-                <div 
-                  key={index}
-                  className="glass-card px-5 py-3 rounded-2xl hover:scale-110 hover:shadow-glow transition-all duration-300 animate-fade-in-up group relative"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {/* Pinkish highlight for language cards */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-pink-100/30 to-rose-100/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
-                  <div className="flex items-center gap-2 relative z-10">
-                    <span className="text-lg">{language.flag}</span>
-                    <span className="font-medium text-foreground group-hover:text-primary transition-colors duration-300 text-sm">
-                      {language.name}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
