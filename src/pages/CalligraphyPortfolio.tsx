@@ -61,191 +61,189 @@ const CalligraphyPortfolio = () => {
 
 
   const calligraphyStyles = [
-    { id: 'modern', name: 'Modern Script', count: 12 },
-    { id: 'traditional', name: 'Traditional', count: 8 },
-    { id: 'decorative', name: 'Decorative', count: 15 },
-    { id: 'minimalist', name: 'Minimalist', count: 6 }
+    { id: 'gallery', name: 'portraits', count: 26 },
+    { id: 'Dreamy Doodles ', name: 'Glimpses', count: 8 }
   ];
 
  const featuredWorks = [
   {
     title: "hello june 🌚🤌🏻",
-    style: "modern",
-    
+    style: "gallery",
+    description: "A cheerful June-inspired calligraphy piece blending soft tones with expressive strokes to capture fresh beginnings.",
     image: calligraphy1,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C79GdymS13q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "Let's be authentic 🪄🖇️",
-    style: "decorative",
+    style: "gallery",
     description: "Vibrant, playful design with whimsical strokes that celebrates originality and self-expression.",
     image: calligraphy2,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C7_jrbnxRx8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "Peace begins with a smile 💜🪽",
-    style: "minimalist",
+    style: "gallery",
     description: "A serene purple calligraphy piece with delicate accents, radiating calmness and harmony.",
     image: calligraphy3,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8CMkgpSvfS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Keep calm, let ur crown shine🌜✨",
-    style: "traditional",
+    style: "gallery",
     description: "An empowering artwork with bold textures and celestial touches that highlight inner strength.",
     image: calligraphy4,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8EwKngyltx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ you are what you manifest 🪷🌙",
-    style: "modern",
+    style: "gallery",
     description: "An elegant lotus-themed design that inspires manifestation and mindful living.",
     image: calligraphy5,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8HWhZgyJZp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ someone who luvs ur imperfect self👀❤️",
-    style: "modern",
+    style: "gallery",
     description: "A heartfelt reminder of self-love with warm tones and graceful strokes.",
     image: calligraphy6,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8J70G9yn7G/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ want to be hpy ? Be 🧸💌",
-    style: "modern",
+    style: "gallery",
     description: "A playful teddy-bear-inspired piece with cozy pastel shades radiating positivity.",
     image: calligraphy7,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8Mee9JSCbi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ belive in the magic of new comings 🫴🏻🕊️",
-    style: "modern",
+    style: "gallery",
     description: "An uplifting artwork with doves and soft colors, symbolizing hope and fresh starts.",
     image: calligraphy8,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8PHMTuhHNf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ sang rahiyo 💕🪐",
-    style: "modern",
+    style: "gallery",
     description: "Romantic strokes paired with cosmic elements, creating a dreamy celestial vibe.",
     image: calligraphy9,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8R3gQChk8s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ constant hope 💚☘️",
-    style: "modern",
+    style: "gallery",
     description: "A clover-inspired design in vibrant greens, symbolizing resilience and optimism.",
     image: calligraphy10,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8bRlPORy-k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ cotton candy sky ☁️🌈",
-    style: "modern",
+    style: "gallery",
     description: "Pastel-toned calligraphy inspired by dreamy skies and soft gradients of cotton candy clouds.",
     image: calligraphy11,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8ejwXkhPyk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Double-tap if you're a dreamer🤍🌿",
-    style: "modern",
+    style: "gallery",
     description: "A minimalist yet elegant composition celebrating dreamers with soft greens and whites.",
     image: calligraphy12,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8hPtHBSXWq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ let's touch the sky ☁️🌈",
-    style: "modern",
+    style: "gallery",
     description: "An inspiring piece with sky elements that evoke freedom, ambition, and limitless dreams.",
     image: calligraphy13,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8mR0QHSzTb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Embracing the blur 📷🐣",
-    style: "modern",
+    style: "gallery",
     description: "A creative experimental work that blends dreamy blurred visuals with bold lettering.",
     image: calligraphy14,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8o1u3CBddY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ flawless 🌷🩷",
-    style: "modern",
+    style: "gallery",
     description: "Delicate florals in soft pinks paired with refined strokes highlighting elegance and beauty.",
     image: calligraphy15,
-    link: "YOUR_POST_LINK_HERE"
+    link: "Yhttps://www.instagram.com/p/C8uIux9S4ct/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Choose to shine 😉✨",
-    style: "modern",
+    style: "gallery",
     description: "A sparkling composition with energetic strokes encouraging positivity and confidence.",
     image: calligraphy16,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C8zVJVbBnP6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ aspire to inspire before you expire 💜💫",
-    style: "modern",
+    style: "gallery",
     description: "A motivational masterpiece in purple tones, radiating creativity and inspiration.",
     image: calligraphy17,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C9SRS8pToez/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ love urself yaar 💗👀 !!!",
-    style: "modern",
+    style: "gallery",
     description: "A bold, playful reminder of self-love with expressive strokes and vivid tones.",
     image: calligraphy18,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C9Z-yODTZM2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ spread ur wings n flyyy🕊️🍃",
-    style: "modern",
+    style: "gallery",
     description: "Freedom-inspired calligraphy with flowing strokes and fresh natural accents.",
     image: calligraphy19,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C9-IDgezD2w/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Quilling Art🍃",
-    style: "modern",
+    style: "gallery",
     description: "A unique blend of calligraphy and quilling textures, adding depth and creativity.",
     image: calligraphy20,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C-AshT5T9V_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ hpy B'day 💕🪄",
-    style: "modern",
+    style: "gallery",
     description: "A festive birthday-inspired artwork with magical flourishes and soft pink vibes.",
     image: calligraphy21,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C-VSQqxTCAC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ be proud of who you are!!❤️‍🩹🦋",
-    style: "modern",
+    style: "gallery",
     description: "Empowering typography with butterflies and strong strokes that celebrate individuality.",
     image: calligraphy22,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/C-xjuQBTfv7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ 🦋❤️",
-    style: "modern",
+    style: "gallery",
     description: "Minimal yet striking design using butterfly motifs and subtle heartfelt strokes.",
     image: calligraphy23,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/DFFss5DzcfT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ 🌷🩷",
-    style: "modern",
+    style: "gallery",
     description: "Simple floral elegance in soft shades, highlighting purity and tenderness.",
     image: calligraphy24,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/DFIU9PUTrhC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ 🪄🍃",
-    style: "modern",
+    style: "gallery",
     description: "A magical greenery-themed design with natural tones and enchanting lettering.",
     image: calligraphy25,
     link: "https://www.instagram.com/p/DFStxyQTshU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ A little rainbow, a little beach, and a lot of heart 💙",
-    style: "modern",
+    style: "gallery",
     description: "Bright and vibrant coastal-inspired art combining rainbow hues with ocean tones.",
     image: calligraphy26,
     link: "https://www.instagram.com/p/DMonn9vPguw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
