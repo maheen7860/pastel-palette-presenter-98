@@ -422,10 +422,6 @@ const CalligraphyPortfolio = () => {
 
 
       <div className="flex items-center justify-between pt-2 border-t border-pink-100/50">
-      <div className="flex items-center gap-2 text-xs text-pink-600/70">
-      <Heart size={14} />
-      <span className="font-medium">Handcrafted with Love</span>
-      </div>
       <button 
       onClick={() => window.open(work.link, "_blank")}
       className="p-2 text-pink-600 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all duration-300 group/btn"
