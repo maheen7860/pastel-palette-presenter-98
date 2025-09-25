@@ -27,6 +27,19 @@ import calligraphy23 from '@/assets/calligraphy-23.png';
 import calligraphy24 from '@/assets/calligraphy-24.png';
 import calligraphy25 from '@/assets/calligraphy-25.png';
 import calligraphy26 from '@/assets/calligraphy-26.png';
+import video1 from '@/assets/video-1.png';
+import video2 from '@/assets/video-2.png';
+import video3 from '@/assets/video-3.png';
+import video4 from '@/assets/video-4.png';
+import video5 from '@/assets/video-5.png';
+import video6 from '@/assets/video-6.png';
+import video7 from '@/assets/video-7.png';
+import video8 from '@/assets/video-8.png';
+import video9 from '@/assets/video-9.png';
+import video10 from '@/assets/video-10.png';
+import video11 from '@/assets/video-11.png';
+import video12 from '@/assets/video-12.png';
+import video13 from '@/assets/video-13.png';
 
 const CalligraphyPortfolio = () => {
   const [activeStyle, setActiveStyle] = useState('all');
@@ -62,7 +75,7 @@ const CalligraphyPortfolio = () => {
 
   const calligraphyStyles = [
     { id: 'gallery', name: 'portraits', count: 26 },
-    { id: 'Dreamy Doodles ', name: 'Glimpses', count: 8 }
+    { id: 'Dreamy Doodles ', name: 'Glimpses', count: 13 }
   ];
 
  const featuredWorks = [
@@ -247,10 +260,86 @@ const CalligraphyPortfolio = () => {
     description: "Bright and vibrant coastal-inspired art combining rainbow hues with ocean tones.",
     image: calligraphy26,
     link: "https://www.instagram.com/p/DMonn9vPguw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ bookmark 🔖📑",
+    style: "Dreamy Doodles",
+    image: video1,
+    link: "https://www.instagram.com/reel/C9xRfg_BjkU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ mudhal nee mudivum nee 📼💜",
+    style: "Dreamy Doodles",
+    image: video2,
+    link: "https://www.instagram.com/reel/C9fMjohBC57/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ drop a ❤️ !!!",
+    style: "Dreamy Doodles",
+    image: video3,
+    link: "https://www.instagram.com/reel/C9NGH4ehG5N/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ hijab is faith not fashion 🪄❤️",
+    style: "Dreamy Doodles",
+    image: video4,
+    link: "https://www.instagram.com/reel/C9HKY1lBq2r/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ In the embrace of love! Life blossoms🩷🦋",
+    style: "Dreamy Doodles",
+    image: video5,
+    link: "https://www.instagram.com/reel/C89XDKUhXCS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ Find your tribe! love them hard🧸🤎",
+    style: "Dreamy Doodles",
+    image: video6,
+    link: "https://www.instagram.com/reel/C863-wyBCC8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ drop a ❤️ !!!",
+    style: "Dreamy Doodles",
+    image: video7,
+    link: "https://www.instagram.com/reel/C84RrgPhwgg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ Glory in our heart 🌟💙",
+    style: "Dreamy Doodles",
+    image: video8,
+    link: "https://www.instagram.com/reel/C81oa8XBNhA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ tag ur hidden ❤️🦋",
+    style: "Dreamy Doodles",
+    image: video9,
+    link: "https://www.instagram.com/reel/C8wklzrhRvE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ Defined by ur exclusivity 🦋💛",
+    style: "Dreamy Doodles",
+    image: video10,
+    link: "https://www.instagram.com/reel/C8jyf7rBTAz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ give ur brain a break 💛🎬",
+    style: "Dreamy Doodles",
+    image: video11,
+    link: "https://www.instagram.com/reel/C8b4aaMxyE5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ hugs speak louder than wrds 🫰🏻🐾",
+    style: "Dreamy Doodles",
+    image: video12,
+    link: "https://www.instagram.com/reel/C8XKFHchY5q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    title: "~ Eid Mubarak 🤎🫂",
+    style: "Dreamy Doodles",
+    image: video13,
+    link: "https://www.instagram.com/reel/C8S5nU4B62K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   }
 ];
-
-
   const goHome = () => {
     window.location.href = '/';
   };
