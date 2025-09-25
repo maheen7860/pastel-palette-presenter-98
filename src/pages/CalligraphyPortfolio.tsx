@@ -35,7 +35,7 @@ const CalligraphyPortfolio = () => {
   const showMore = () => {
     setVisibleCount((prev) => prev + 6); // 👈 Load 6 more on click
   };
-
+  
  useEffect(() => {
   const observer = new IntersectionObserver(
     (entries) => {
