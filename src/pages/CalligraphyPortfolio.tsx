@@ -30,25 +30,31 @@ import calligraphy26 from '@/assets/calligraphy-26.png';
 
 const CalligraphyPortfolio = () => {
   const [activeStyle, setActiveStyle] = useState('all');
+  const [visibleCount, setVisibleCount] = useState(6); 
+  
+  const showMore = () => {
+    setVisibleCount((prev) => prev + 6); // 👈 Load 6 more on click
+  };
 
   useEffect(() => {
-    // Add scroll fade effects
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
-    );
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        } else {
+          entry.target.classList.remove('is-visible'); // fade out when leaving viewport
+        }
+      });
+    },
+    { threshold: 0.2, rootMargin: '0px 0px -50px 0px' }
+  );
 
-    const fadeElements = document.querySelectorAll('.fade-in-section');
-    fadeElements.forEach((el) => observer.observe(el));
+  const fadeElements = document.querySelectorAll('.fade-in-section');
+  fadeElements.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
-  }, []);
+  return () => observer.disconnect();
+}, []);
 
   const calligraphyStyles = [
     { id: 'modern', name: 'Modern Script', count: 12 },
@@ -388,86 +394,88 @@ const CalligraphyPortfolio = () => {
               ))}
             </div>
 
-            {/* Elegant Works Gallery */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredWorks.map((work, index) => (
-                <div 
-                  key={index}
-                  className="group relative overflow-hidden rounded-3xl transition-all duration-700 hover:scale-105 animate-fade-in-up"
-                  style={{animationDelay: `${index * 0.1}s`}}
-                >
-                  {/* Premium Card Design */}
-                  <div className="relative bg-white/80 backdrop-blur-xl border border-white/60 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-700">
-                    
-                    {/* Image Container */}
-                    <div className="relative overflow-hidden">
-                      <img 
-                        src={work.image} 
-                        alt={work.title}
-                        className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      {/* Elegant Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      
-                      {/* Floating Action Button */}
-                      {/* Floating Action Button */}
-<div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-  <button 
-    onClick={() => window.open(work.link, "_blank")}
-    className="w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
-  >
-    <ExternalLink size={18} className="text-pink-600 group-hover/btn:scale-110 transition-transform" />
-  </button>
+          {/* Elegant Works Gallery */}
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {filteredWorks.slice(0, visibleCount).map((work, index) => (
+    <div 
+      key={index}
+      className="group relative overflow-hidden rounded-3xl transition-all duration-700 hover:scale-105 animate-fade-in-up"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      {/* Premium Card Design */}
+      <div className="relative bg-white/80 backdrop-blur-xl border border-white/60 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-700">
+        
+        {/* Image Container */}
+        <div className="relative overflow-hidden">
+          <img 
+            src={work.image} 
+            alt={work.title}
+            className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          {/* Elegant Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          
+          {/* Floating Action Button */}
+          <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+            <button 
+              onClick={() => window.open(work.link, "_blank")}
+              className="w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
+            >
+              <ExternalLink size={18} className="text-pink-600 group-hover/btn:scale-110 transition-transform" />
+            </button>
+          </div>
+
+          {/* Style Badge */}
+          <div className="absolute top-4 left-4">
+            <span className="px-3 py-1.5 text-xs font-medium bg-white/90 backdrop-blur-sm text-pink-700 rounded-full border border-white/50 shadow-sm">
+              {calligraphyStyles.find(s => s.id === work.style)?.name}
+            </span>
+          </div>
+        </div>
+        
+        {/* Content Area */}
+        <div className="p-6 space-y-4">
+          <h3 className="font-serif font-bold text-xl text-foreground group-hover:text-pink-600 transition-colors duration-300 leading-tight">
+            {work.title}
+          </h3>
+          <p className="text-sm text-foreground/70 leading-relaxed line-clamp-2">
+            {work.description}
+          </p>
+          
+          {/* Action Footer (only once now ✅) */}
+          <div className="flex items-center justify-between pt-2 border-t border-pink-100/50">
+            <div className="flex items-center gap-2 text-xs text-pink-600/70">
+              <Heart size={14} />
+              <span className="font-medium">Handcrafted with Love</span>
+            </div>
+            <button 
+              onClick={() => window.open(work.link, "_blank")}
+              className="p-2 text-pink-600 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all duration-300 group/btn"
+            >
+              <Instagram size={16} className="group-hover/btn:scale-110 transition-transform" />
+            </button>
+          </div>
+        </div>
+
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-rose-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+      </div>
+    </div>
+  ))}
 </div>
 
-
-      <div className="flex items-center justify-between pt-2 border-t border-pink-100/50">
-      <button 
-      onClick={() => window.open(work.link, "_blank")}
-      className="p-2 text-pink-600 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all duration-300 group/btn"
+{/* Show More Button */}
+{visibleCount < filteredWorks.length && (
+  <div className="text-center mt-10">
+    <button
+      onClick={showMore}
+      className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
     >
-      <Instagram size={16} className="group-hover/btn:scale-110 transition-transform" />
+      Show More
     </button>
   </div>
+)}
 
-                      {/* Style Badge */}
-                      <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1.5 text-xs font-medium bg-white/90 backdrop-blur-sm text-pink-700 rounded-full border border-white/50 shadow-sm">
-                          {calligraphyStyles.find(s => s.id === work.style)?.name}
-                        </span>
-                      </div>
-                    </div>
-                    
-                    {/* Content Area */}
-                    <div className="p-6 space-y-4">
-                      <h3 className="font-serif font-bold text-xl text-foreground group-hover:text-pink-600 transition-colors duration-300 leading-tight">
-                        {work.title}
-                      </h3>
-                      <p className="text-sm text-foreground/70 leading-relaxed line-clamp-2">
-                        {work.description}
-                      </p>
-                      
-                      {/* Action Footer */}
-                      <div className="flex items-center justify-between pt-2 border-t border-pink-100/50">
-                        <div className="flex items-center gap-2 text-xs text-pink-600/70">
-                          <Heart size={14} />
-                          <span className="font-medium">Handcrafted with Love</span>
-                        </div>
-                        <button 
-                          onClick={openInstagram}
-                          className="p-2 text-pink-600 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all duration-300 group/btn"
-                        >
-                          <Instagram size={16} className="group-hover/btn:scale-110 transition-transform" />
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Decorative Elements */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-rose-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
