@@ -57,164 +57,191 @@ const CalligraphyPortfolio = () => {
     { id: 'minimalist', name: 'Minimalist', count: 6 }
   ];
 
-  const featuredWorks = [
-    {
-      title: "hello ju ne 🌚🤌🏻",
-      style: "modern",
-      description: "Beautiful floral calligraphy with delicate pink roses and green accents",
-      image: calligraphy1
-    },
-    {
-      title: "Let's be authentic 🪄🖇️",
-      style: "decorative", 
-      description: "Playful bee-themed artwork with vibrant colors and whimsical design",
-      image: calligraphy2
-    },
-    {
-      title: "Peace begins with a smile 💜🪽",
-      style: "minimalist",
-      description: "Serene purple-themed calligraphy with elegant floral elements",
-      image: calligraphy3
-    },
-    {
-      title: "~ Keep calm, let ur crown shine🌜✨",
-      style: "traditional",
-      description: "Colorful motivational artwork with bold geometric patterns",
-      image: calligraphy4
-    },
-    {
-      title: "~ you are what you manifest 🪷🌙",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy5
-    },
-    {
-      title: "~ someone who luvs ur imperfect self👀❤️",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy6
-    },
-    {
-      title: "~  want to be hpy ? Be 🧸💌",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy7
-    },
-    {
-      title: "~ belive in the magic of new comings 🫴🏻🕊️",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy8
-    },
-    {
-      title: "~  sang rahiyo 💕🪐",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy9
-    },
-    {
-      title: "~  constant hope 💚☘️",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy10
-    },
-    {
-      title: "~ cotton candy sky ☁️🌈",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy11
-    },
-    {
-      title: "~  Double-tap if you're a dreamer🤍🌿",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy12
-    },
-    {
-      title: "~ let's touch the sky ☁️🌈",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy13
-    },
-    {
-      title: "~ Embracing the blur 📷🐣",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy14
-    },
-    {
-      title: "~ flawless 🌷🩷",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy15
-    },
-    {
-      title: "~ Choose to shine 😉✨",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy16
-    },
-    {
-      title: "~ aspire to inspire before you expire 💜💫",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy17
-    },
-    {
-      title: "~ love urself yaar 💗👀 !!!",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy18
-    },
-    {
-      title: "~ spread ur wings n flyyy🕊️🍃",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy19
-    },
-    {
-      title: "~ Quilling Art🍃 ",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy20
-    },
-    {
-      title: "~ hpy B'day 💕🪄",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy21
-    },
-    {
-      title: "~  be proud of who you are!!❤️‍🩹🦋",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy22
-    },
-    {
-      title: "~ 🦋❤️",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy23
-    },
-    {
-      title: "~ 🌷🩷",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy24
-    },
-    {
-      title: "~ 🪄🍃",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy25
-    },
-    {
-      title: "~ A little rainbow, a little beach, and a lot of heart 💙",
-      style: "modern",
-      description: "Inspirational quote with delicate pink florals and elegant script",
-      image: calligraphy26
-    }
-  ];
+ const featuredWorks = [
+  {
+    title: "hello ju ne 🌚🤌🏻",
+    style: "modern",
+    description: "A cheerful June-inspired calligraphy piece blending soft tones with expressive strokes to capture fresh beginnings.",
+    image: calligraphy1,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "Let's be authentic 🪄🖇️",
+    style: "decorative",
+    description: "Vibrant, playful design with whimsical strokes that celebrates originality and self-expression.",
+    image: calligraphy2,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "Peace begins with a smile 💜🪽",
+    style: "minimalist",
+    description: "A serene purple calligraphy piece with delicate accents, radiating calmness and harmony.",
+    image: calligraphy3,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ Keep calm, let ur crown shine🌜✨",
+    style: "traditional",
+    description: "An empowering artwork with bold textures and celestial touches that highlight inner strength.",
+    image: calligraphy4,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ you are what you manifest 🪷🌙",
+    style: "modern",
+    description: "An elegant lotus-themed design that inspires manifestation and mindful living.",
+    image: calligraphy5,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ someone who luvs ur imperfect self👀❤️",
+    style: "modern",
+    description: "A heartfelt reminder of self-love with warm tones and graceful strokes.",
+    image: calligraphy6,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ want to be hpy ? Be 🧸💌",
+    style: "modern",
+    description: "A playful teddy-bear-inspired piece with cozy pastel shades radiating positivity.",
+    image: calligraphy7,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ belive in the magic of new comings 🫴🏻🕊️",
+    style: "modern",
+    description: "An uplifting artwork with doves and soft colors, symbolizing hope and fresh starts.",
+    image: calligraphy8,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ sang rahiyo 💕🪐",
+    style: "modern",
+    description: "Romantic strokes paired with cosmic elements, creating a dreamy celestial vibe.",
+    image: calligraphy9,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ constant hope 💚☘️",
+    style: "modern",
+    description: "A clover-inspired design in vibrant greens, symbolizing resilience and optimism.",
+    image: calligraphy10,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ cotton candy sky ☁️🌈",
+    style: "modern",
+    description: "Pastel-toned calligraphy inspired by dreamy skies and soft gradients of cotton candy clouds.",
+    image: calligraphy11,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ Double-tap if you're a dreamer🤍🌿",
+    style: "modern",
+    description: "A minimalist yet elegant composition celebrating dreamers with soft greens and whites.",
+    image: calligraphy12,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ let's touch the sky ☁️🌈",
+    style: "modern",
+    description: "An inspiring piece with sky elements that evoke freedom, ambition, and limitless dreams.",
+    image: calligraphy13,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ Embracing the blur 📷🐣",
+    style: "modern",
+    description: "A creative experimental work that blends dreamy blurred visuals with bold lettering.",
+    image: calligraphy14,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ flawless 🌷🩷",
+    style: "modern",
+    description: "Delicate florals in soft pinks paired with refined strokes highlighting elegance and beauty.",
+    image: calligraphy15,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ Choose to shine 😉✨",
+    style: "modern",
+    description: "A sparkling composition with energetic strokes encouraging positivity and confidence.",
+    image: calligraphy16,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ aspire to inspire before you expire 💜💫",
+    style: "modern",
+    description: "A motivational masterpiece in purple tones, radiating creativity and inspiration.",
+    image: calligraphy17,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ love urself yaar 💗👀 !!!",
+    style: "modern",
+    description: "A bold, playful reminder of self-love with expressive strokes and vivid tones.",
+    image: calligraphy18,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ spread ur wings n flyyy🕊️🍃",
+    style: "modern",
+    description: "Freedom-inspired calligraphy with flowing strokes and fresh natural accents.",
+    image: calligraphy19,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ Quilling Art🍃",
+    style: "modern",
+    description: "A unique blend of calligraphy and quilling textures, adding depth and creativity.",
+    image: calligraphy20,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ hpy B'day 💕🪄",
+    style: "modern",
+    description: "A festive birthday-inspired artwork with magical flourishes and soft pink vibes.",
+    image: calligraphy21,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ be proud of who you are!!❤️‍🩹🦋",
+    style: "modern",
+    description: "Empowering typography with butterflies and strong strokes that celebrate individuality.",
+    image: calligraphy22,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ 🦋❤️",
+    style: "modern",
+    description: "Minimal yet striking design using butterfly motifs and subtle heartfelt strokes.",
+    image: calligraphy23,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ 🌷🩷",
+    style: "modern",
+    description: "Simple floral elegance in soft shades, highlighting purity and tenderness.",
+    image: calligraphy24,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ 🪄🍃",
+    style: "modern",
+    description: "A magical greenery-themed design with natural tones and enchanting lettering.",
+    image: calligraphy25,
+    link: "YOUR_POST_LINK_HERE"
+  },
+  {
+    title: "~ A little rainbow, a little beach, and a lot of heart 💙",
+    style: "modern",
+    description: "Bright and vibrant coastal-inspired art combining rainbow hues with ocean tones.",
+    image: calligraphy26,
+    link: "YOUR_POST_LINK_HERE"
+  }
+];
+
 
   const goHome = () => {
     window.location.href = '/';
@@ -383,14 +410,29 @@ const CalligraphyPortfolio = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       
                       {/* Floating Action Button */}
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                        <button 
-                          onClick={openInstagram}
-                          className="w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
-                        >
-                          <ExternalLink size={18} className="text-pink-600 group-hover/btn:scale-110 transition-transform" />
-                        </button>
-                      </div>
+                      {/* Floating Action Button */}
+<div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+  <button 
+    onClick={() => window.open(work.link, "_blank")}
+    className="w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl group/btn"
+  >
+    <ExternalLink size={18} className="text-pink-600 group-hover/btn:scale-110 transition-transform" />
+  </button>
+</div>
+
+
+      <div className="flex items-center justify-between pt-2 border-t border-pink-100/50">
+      <div className="flex items-center gap-2 text-xs text-pink-600/70">
+      <Heart size={14} />
+      <span className="font-medium">Handcrafted with Love</span>
+      </div>
+      <button 
+      onClick={() => window.open(work.link, "_blank")}
+      className="p-2 text-pink-600 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all duration-300 group/btn"
+    >
+      <Instagram size={16} className="group-hover/btn:scale-110 transition-transform" />
+    </button>
+  </div>
 
                       {/* Style Badge */}
                       <div className="absolute top-4 left-4">
