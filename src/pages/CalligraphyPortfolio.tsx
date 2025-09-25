@@ -36,18 +36,21 @@ const CalligraphyPortfolio = () => {
     setVisibleCount((prev) => prev + 6); // 👈 Load 6 more on click
   };
 
-  useEffect(() => {
+ useEffect(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
-        } else {
-          entry.target.classList.remove('is-visible'); // fade out when leaving viewport
+          observer.unobserve(entry.target);
+          // fade out when leaving viewport
         }
       });
     },
-    { threshold: 0.2, rootMargin: '0px 0px -50px 0px' }
+    {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px',
+    }
   );
 
   const fadeElements = document.querySelectorAll('.fade-in-section');
@@ -55,6 +58,7 @@ const CalligraphyPortfolio = () => {
 
   return () => observer.disconnect();
 }, []);
+
 
   const calligraphyStyles = [
     { id: 'modern', name: 'Modern Script', count: 12 },
