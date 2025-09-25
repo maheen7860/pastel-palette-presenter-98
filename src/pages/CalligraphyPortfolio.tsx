@@ -232,6 +232,7 @@ const CalligraphyPortfolio = () => {
   {
     title: "~ A little rainbow, a little beach, and a lot of heart 💙",
     style: "gallery",
+    description: "",
     image: calligraphy26,
     link: "https://www.instagram.com/p/DMonn9vPguw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
