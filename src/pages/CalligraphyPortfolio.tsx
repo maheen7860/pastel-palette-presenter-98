@@ -356,7 +356,7 @@ const CalligraphyPortfolio = () => {
                 <Palette size={16} />
                 Art Collection
               </div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6 bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
+             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
                 Signature Calligraphy Styles
               </h2>
               <div className="flex items-center justify-center gap-2 mb-6">
