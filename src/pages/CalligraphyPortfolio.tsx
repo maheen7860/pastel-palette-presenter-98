@@ -75,7 +75,7 @@ const CalligraphyPortfolio = () => {
 
   const calligraphyStyles = [
     { id: 'gallery', name: 'portraits', count: 26 },
-    { id: 'Dreamy-Doodles ', name: 'Glimpses', count: 13 }
+    { id: 'Dreamy-Doodles', name: 'Glimpses', count: 13 }
   ];
 
  const featuredWorks = [
