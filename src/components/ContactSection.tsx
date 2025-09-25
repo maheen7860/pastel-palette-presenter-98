@@ -180,12 +180,14 @@ const ContactSection = () => {
                     </button>
                     
                     <button
-                      type="button"
-                      className="btn-outline inline-flex items-center justify-center gap-2 group px-4"
-                    >
-                      <Download size={16} className="group-hover:scale-110 transition-transform" />
-                      <span className="hidden sm:inline">Resume</span>
-                    </button>
+  type="button"
+  onClick={() => window.open('/MAHI RESUME.docx', '_blank')}
+  className="btn-outline inline-flex items-center justify-center gap-2 group px-4"
+>
+  <Download size={16} className="group-hover:scale-110 transition-transform" />
+  <span className="hidden sm:inline">Resume</span>
+</button>
+
                   </div>
                 </form>
               </div>
