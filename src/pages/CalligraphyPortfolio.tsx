@@ -69,9 +69,9 @@ const CalligraphyPortfolio = () => {
 
  const featuredWorks = [
   {
-    title: "hello ju ne 🌚🤌🏻",
+    title: "hello june 🌚🤌🏻",
     style: "modern",
-    description: "A cheerful June-inspired calligraphy piece blending soft tones with expressive strokes to capture fresh beginnings.",
+    
     image: calligraphy1,
     link: "YOUR_POST_LINK_HERE"
   },
