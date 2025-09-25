@@ -231,14 +231,14 @@ const CalligraphyPortfolio = () => {
     style: "modern",
     description: "A magical greenery-themed design with natural tones and enchanting lettering.",
     image: calligraphy25,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/DFStxyQTshU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ A little rainbow, a little beach, and a lot of heart 💙",
     style: "modern",
     description: "Bright and vibrant coastal-inspired art combining rainbow hues with ocean tones.",
     image: calligraphy26,
-    link: "YOUR_POST_LINK_HERE"
+    link: "https://www.instagram.com/p/DMonn9vPguw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   }
 ];
 
