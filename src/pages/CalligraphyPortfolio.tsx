@@ -6,6 +6,27 @@ import calligraphy2 from '@/assets/calligraphy-2.jpg';
 import calligraphy3 from '@/assets/calligraphy-3.jpg';
 import calligraphy4 from '@/assets/calligraphy-4.jpg';
 import calligraphy5 from '@/assets/calligraphy-5.jpg';
+import calligraphy6 from '@/assets/calligraphy-6.jpg';
+import calligraphy7 from '@/assets/calligraphy-7.jpg';
+import calligraphy8 from '@/assets/calligraphy-8.jpg';
+import calligraphy9 from '@/assets/calligraphy-9.jpg';
+import calligraphy10 from '@/assets/calligraphy-10.png';
+import calligraphy11 from '@/assets/calligraphy-11.png';
+import calligraphy12 from '@/assets/calligraphy-12.png';
+import calligraphy13 from '@/assets/calligraphy-13.png';
+import calligraphy14 from '@/assets/calligraphy-14.png';
+import calligraphy15 from '@/assets/calligraphy-15.png';
+import calligraphy16 from '@/assets/calligraphy-16.png';
+import calligraphy17 from '@/assets/calligraphy-17.png';
+import calligraphy18 from '@/assets/calligraphy-18.png';
+import calligraphy19 from '@/assets/calligraphy-19.png';
+import calligraphy20 from '@/assets/calligraphy-20.png';
+import calligraphy21 from '@/assets/calligraphy-21.png';
+import calligraphy22 from '@/assets/calligraphy-22.png';
+import calligraphy23 from '@/assets/calligraphy-23.png';
+import calligraphy24 from '@/assets/calligraphy-24.png';
+import calligraphy25 from '@/assets/calligraphy-25.png';
+import calligraphy26 from '@/assets/calligraphy-26.png';
 
 const CalligraphyPortfolio = () => {
   const [activeStyle, setActiveStyle] = useState('all');
@@ -61,12 +82,137 @@ const CalligraphyPortfolio = () => {
       description: "Colorful motivational artwork with bold geometric patterns",
       image: calligraphy4
     },
-    
     {
       title: "~ you are what you manifest 🪷🌙",
       style: "modern",
       description: "Inspirational quote with delicate pink florals and elegant script",
       image: calligraphy5
+    },
+    {
+      title: "~ someone who luvs ur imperfect self👀❤️",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy6
+    },
+    {
+      title: "~  want to be hpy ? Be 🧸💌",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy7
+    },
+    {
+      title: "~ belive in the magic of new comings 🫴🏻🕊️",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy8
+    },
+    {
+      title: "~  sang rahiyo 💕🪐",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy9
+    },
+    {
+      title: "~  constant hope 💚☘️",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy10
+    },
+    {
+      title: "~ cotton candy sky ☁️🌈",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy11
+    },
+    {
+      title: "~  Double-tap if you're a dreamer🤍🌿",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy12
+    },
+    {
+      title: "~ let's touch the sky ☁️🌈",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy13
+    },
+    {
+      title: "~ Embracing the blur 📷🐣",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy14
+    },
+    {
+      title: "~ flawless 🌷🩷",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy15
+    },
+    {
+      title: "~ Choose to shine 😉✨",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy16
+    },
+    {
+      title: "~ aspire to inspire before you expire 💜💫",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy17
+    },
+    {
+      title: "~ love urself yaar 💗👀 !!!",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy18
+    },
+    {
+      title: "~ spread ur wings n flyyy🕊️🍃",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy19
+    },
+    {
+      title: "~ Quilling Art🍃 ",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy20
+    },
+    {
+      title: "~ hpy B'day 💕🪄",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy21
+    },
+    {
+      title: "~  be proud of who you are!!❤️‍🩹🦋",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy22
+    },
+    {
+      title: "~ 🦋❤️",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy23
+    },
+    {
+      title: "~ 🌷🩷",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy24
+    },
+    {
+      title: "~ 🪄🍃",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy25
+    },
+    {
+      title: "~ A little rainbow, a little beach, and a lot of heart 💙",
+      style: "modern",
+      description: "Inspirational quote with delicate pink florals and elegant script",
+      image: calligraphy26
     }
   ];
 
