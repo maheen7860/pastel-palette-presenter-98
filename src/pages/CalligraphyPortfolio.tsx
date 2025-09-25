@@ -75,267 +75,241 @@ const CalligraphyPortfolio = () => {
 
   const calligraphyStyles = [
     { id: 'gallery', name: 'portraits', count: 26 },
-    { id: 'Dreamy Doodles ', name: 'Glimpses', count: 13 }
+    { id: 'Dreamy-Doodles ', name: 'Glimpses', count: 13 }
   ];
 
  const featuredWorks = [
   {
     title: "hello june 🌚🤌🏻",
     style: "gallery",
-    description: "A cheerful June-inspired calligraphy piece blending soft tones with expressive strokes to capture fresh beginnings.",
     image: calligraphy1,
     link: "https://www.instagram.com/p/C79GdymS13q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "Let's be authentic 🪄🖇️",
     style: "gallery",
-    description: "Vibrant, playful design with whimsical strokes that celebrates originality and self-expression.",
     image: calligraphy2,
     link: "https://www.instagram.com/p/C7_jrbnxRx8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "Peace begins with a smile 💜🪽",
     style: "gallery",
-    description: "A serene purple calligraphy piece with delicate accents, radiating calmness and harmony.",
     image: calligraphy3,
     link: "https://www.instagram.com/p/C8CMkgpSvfS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Keep calm, let ur crown shine🌜✨",
     style: "gallery",
-    description: "An empowering artwork with bold textures and celestial touches that highlight inner strength.",
     image: calligraphy4,
     link: "https://www.instagram.com/p/C8EwKngyltx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ you are what you manifest 🪷🌙",
     style: "gallery",
-    description: "An elegant lotus-themed design that inspires manifestation and mindful living.",
     image: calligraphy5,
     link: "https://www.instagram.com/p/C8HWhZgyJZp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ someone who luvs ur imperfect self👀❤️",
     style: "gallery",
-    description: "A heartfelt reminder of self-love with warm tones and graceful strokes.",
     image: calligraphy6,
     link: "https://www.instagram.com/p/C8J70G9yn7G/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ want to be hpy ? Be 🧸💌",
     style: "gallery",
-    description: "A playful teddy-bear-inspired piece with cozy pastel shades radiating positivity.",
     image: calligraphy7,
     link: "https://www.instagram.com/p/C8Mee9JSCbi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ belive in the magic of new comings 🫴🏻🕊️",
     style: "gallery",
-    description: "An uplifting artwork with doves and soft colors, symbolizing hope and fresh starts.",
     image: calligraphy8,
     link: "https://www.instagram.com/p/C8PHMTuhHNf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ sang rahiyo 💕🪐",
     style: "gallery",
-    description: "Romantic strokes paired with cosmic elements, creating a dreamy celestial vibe.",
     image: calligraphy9,
     link: "https://www.instagram.com/p/C8R3gQChk8s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ constant hope 💚☘️",
     style: "gallery",
-    description: "A clover-inspired design in vibrant greens, symbolizing resilience and optimism.",
     image: calligraphy10,
     link: "https://www.instagram.com/p/C8bRlPORy-k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ cotton candy sky ☁️🌈",
     style: "gallery",
-    description: "Pastel-toned calligraphy inspired by dreamy skies and soft gradients of cotton candy clouds.",
     image: calligraphy11,
     link: "https://www.instagram.com/p/C8ejwXkhPyk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Double-tap if you're a dreamer🤍🌿",
     style: "gallery",
-    description: "A minimalist yet elegant composition celebrating dreamers with soft greens and whites.",
     image: calligraphy12,
     link: "https://www.instagram.com/p/C8hPtHBSXWq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ let's touch the sky ☁️🌈",
     style: "gallery",
-    description: "An inspiring piece with sky elements that evoke freedom, ambition, and limitless dreams.",
     image: calligraphy13,
     link: "https://www.instagram.com/p/C8mR0QHSzTb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Embracing the blur 📷🐣",
     style: "gallery",
-    description: "A creative experimental work that blends dreamy blurred visuals with bold lettering.",
     image: calligraphy14,
     link: "https://www.instagram.com/p/C8o1u3CBddY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ flawless 🌷🩷",
     style: "gallery",
-    description: "Delicate florals in soft pinks paired with refined strokes highlighting elegance and beauty.",
     image: calligraphy15,
     link: "Yhttps://www.instagram.com/p/C8uIux9S4ct/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Choose to shine 😉✨",
     style: "gallery",
-    description: "A sparkling composition with energetic strokes encouraging positivity and confidence.",
     image: calligraphy16,
     link: "https://www.instagram.com/p/C8zVJVbBnP6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ aspire to inspire before you expire 💜💫",
     style: "gallery",
-    description: "A motivational masterpiece in purple tones, radiating creativity and inspiration.",
     image: calligraphy17,
     link: "https://www.instagram.com/p/C9SRS8pToez/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ love urself yaar 💗👀 !!!",
     style: "gallery",
-    description: "A bold, playful reminder of self-love with expressive strokes and vivid tones.",
     image: calligraphy18,
     link: "https://www.instagram.com/p/C9Z-yODTZM2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ spread ur wings n flyyy🕊️🍃",
     style: "gallery",
-    description: "Freedom-inspired calligraphy with flowing strokes and fresh natural accents.",
     image: calligraphy19,
     link: "https://www.instagram.com/p/C9-IDgezD2w/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Quilling Art🍃",
     style: "gallery",
-    description: "A unique blend of calligraphy and quilling textures, adding depth and creativity.",
     image: calligraphy20,
     link: "https://www.instagram.com/p/C-AshT5T9V_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ hpy B'day 💕🪄",
     style: "gallery",
-    description: "A festive birthday-inspired artwork with magical flourishes and soft pink vibes.",
     image: calligraphy21,
     link: "https://www.instagram.com/p/C-VSQqxTCAC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ be proud of who you are!!❤️‍🩹🦋",
     style: "gallery",
-    description: "Empowering typography with butterflies and strong strokes that celebrate individuality.",
     image: calligraphy22,
     link: "https://www.instagram.com/p/C-xjuQBTfv7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ 🦋❤️",
     style: "gallery",
-    description: "Minimal yet striking design using butterfly motifs and subtle heartfelt strokes.",
     image: calligraphy23,
     link: "https://www.instagram.com/p/DFFss5DzcfT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ 🌷🩷",
     style: "gallery",
-    description: "Simple floral elegance in soft shades, highlighting purity and tenderness.",
     image: calligraphy24,
     link: "https://www.instagram.com/p/DFIU9PUTrhC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ 🪄🍃",
     style: "gallery",
-    description: "A magical greenery-themed design with natural tones and enchanting lettering.",
     image: calligraphy25,
     link: "https://www.instagram.com/p/DFStxyQTshU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ A little rainbow, a little beach, and a lot of heart 💙",
     style: "gallery",
-    description: "Bright and vibrant coastal-inspired art combining rainbow hues with ocean tones.",
     image: calligraphy26,
     link: "https://www.instagram.com/p/DMonn9vPguw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ bookmark 🔖📑",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video1,
     link: "https://www.instagram.com/reel/C9xRfg_BjkU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ mudhal nee mudivum nee 📼💜",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video2,
     link: "https://www.instagram.com/reel/C9fMjohBC57/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ drop a ❤️ !!!",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video3,
     link: "https://www.instagram.com/reel/C9NGH4ehG5N/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ hijab is faith not fashion 🪄❤️",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video4,
     link: "https://www.instagram.com/reel/C9HKY1lBq2r/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ In the embrace of love! Life blossoms🩷🦋",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video5,
     link: "https://www.instagram.com/reel/C89XDKUhXCS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Find your tribe! love them hard🧸🤎",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video6,
     link: "https://www.instagram.com/reel/C863-wyBCC8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ drop a ❤️ !!!",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video7,
     link: "https://www.instagram.com/reel/C84RrgPhwgg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Glory in our heart 🌟💙",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video8,
     link: "https://www.instagram.com/reel/C81oa8XBNhA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ tag ur hidden ❤️🦋",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video9,
     link: "https://www.instagram.com/reel/C8wklzrhRvE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Defined by ur exclusivity 🦋💛",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video10,
     link: "https://www.instagram.com/reel/C8jyf7rBTAz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ give ur brain a break 💛🎬",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video11,
     link: "https://www.instagram.com/reel/C8b4aaMxyE5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ hugs speak louder than wrds 🫰🏻🐾",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video12,
     link: "https://www.instagram.com/reel/C8XKFHchY5q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     title: "~ Eid Mubarak 🤎🫂",
-    style: "Dreamy Doodles",
+    style: "Dreamy-Doodles",
     image: video13,
     link: "https://www.instagram.com/reel/C8S5nU4B62K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   }
