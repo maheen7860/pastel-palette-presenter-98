@@ -60,9 +60,10 @@ const ProjectsSection = () => {
               <Sparkles size={14} className="animate-pulse" />
               Portfolio Showcase
             </div>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6 bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 bg-clip-text text-transparent">
-              Featured Projects
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-transparent mb-6 bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 bg-clip-text">
+            Featured Projects
             </h2>
+
             <div className="flex items-center justify-center gap-2 mb-6">
               <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-pink-400 rounded-full" />
               <div className="w-8 h-1 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full" />
