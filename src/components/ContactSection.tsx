@@ -246,7 +246,7 @@ const ContactSection = () => {
 
           <div className="mt-8 pt-8 border-t border-foreground/10 text-center">
             <p className="text-foreground/50 text-sm">
-              © 2024 Mahadiya Maheen K F. Designed with passion and built with modern technologies.
+              © 2025 Mahadiya Maheen K F. Designed with passion and built with modern technologies.
             </p>
           </div>
         </div>
