@@ -5,7 +5,7 @@ const ExperienceSection = () => {
     title: "Frontend Developer Intern",
     company: "Celstream Technologies Private Limited",
     period: "JUN 2025 – JULY 2025",
-    location: "Chennai, India",
+    location: "Banglore, India",
     description: "Intern at Celstream Technologies – Successfully completed a one-month internship from 4 June 2025 to 4 July 2025, where I worked on the project titled \"Task Management System.\" During this internship, I developed a dynamic task management system using React, applying core concepts such as component-based architecture, React Hooks, Redux Toolkit for global state management, and React Router for protected routing. I also implemented advanced features including code splitting with lazy loading, session timeout handling, and drag-and-drop task workflows. This experience significantly strengthened my skills in scalable frontend application development, while providing real-world exposure to modern web technologies and enhancing my ability to deliver efficient, production-ready solutions within a professional environment.",
     achievements: [
       "Developed a comprehensive Task Management System using React",
