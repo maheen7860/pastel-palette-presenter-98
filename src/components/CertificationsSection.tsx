@@ -52,6 +52,22 @@ const CertificationsSection = () => {
       link: "https://drive.google.com/file/d/1kgJc2K9O9QNgrtqROjjdlcq7IiIY0t4c/view?usp=sharing"
     },
     {
+      title: "Oracle Cloud Infrastructure Generative AI Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1Vy9pL3ifD72MS8J_MZrorEY_J4VSbGKq/view?usp=sharing"
+    },
+    {
+      title: " Oracle Cloud Infrastructure Data Science Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1_yHOSat6RUystWL6NKDh7izO2nwGXHJT/view?usp=sharing"
+    },
+    {
       title: "Enhancing Soft Skills and Personality",
       issuer: "NPTEL",
       category: "Professional Development",
