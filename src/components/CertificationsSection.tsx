@@ -73,7 +73,15 @@ const CertificationsSection = () => {
       category: "Professional Development",
       year: "2024",
       image: nptelCert,
-      link: ""
+      link: "https://drive.google.com/file/d/12E8x_kxXwt6Pq_pS-JnTt12KsJstnOU2/view?usp=sharing"
+    },
+    {
+      title: "Computer Networks And Internet Protocol",
+      issuer: "NPTEL",
+      category: "Professional Development",
+      year: "2024",
+      image: nptelCert,
+      link: "https://drive.google.com/file/d/1PplKpVpDE4K1M3iq6vpWoBJLdQ9FA7Wy/view?usp=sharing"
     },
     {
       title: "Android App Development",
