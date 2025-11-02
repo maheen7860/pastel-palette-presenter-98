@@ -8,7 +8,7 @@ import googleCert from '@/assets/google-cert.png';
 import internshalaCert from '@/assets/internshala-cert.png';
 import infosysCert from '@/assets/infosys-cert.png';
 import nptelCert from '@/assets/nptel-cert.png';
-
+import Deloittecert from '@/assets/Deloitte-cert.png';
 const CertificationsSection = () => {
   const certifications = [
     {
@@ -122,6 +122,22 @@ const CertificationsSection = () => {
       year: "2024",
       image: udemyCert,
       link: "https://drive.google.com/file/d/18-BcraIOFhcttLUcr14pd2fgkPbI_bj7/view?usp=sharing"
+    },
+    {
+      title: "Technology	Job	Simulation",
+      issuer: "Deloitte",
+      category: "General",
+      year: "2024",
+      image: Deloittecert,
+      link: "https://drive.google.com/file/d/1B0pjsWluiB0SxGIHAo9AKq7wjKhG9CEZ/view?usp=sharing"
+    },
+     {
+      title: " Data	Analytics	Job	Simulation",
+      issuer: "Deloitte",
+      category: "General",
+      year: "2024",
+      image: Deloittecert,
+      link: "https://drive.google.com/file/d/1hdcw3Hu-kuDO0cEOXhl6Zqwl_hQTdyN6/view?usp=sharing"
     },
     {
       title: "Business Etiquette",
