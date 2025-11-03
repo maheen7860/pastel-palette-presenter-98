@@ -73,6 +73,94 @@ const CertificationsSection = () => {
       link: "https://drive.google.com/file/d/1_yHOSat6RUystWL6NKDh7izO2nwGXHJT/view?usp=sharing"
     },
     {
+      title: "Oracle Analytics Cloud 2025 Certified Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1YBMVkM_s0bj5FqfjzLg6tuacYWlA7P5B/view?usp=sharing"
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1Ew6-gOzzeUXqQbsKdZA4sLZF4_UceECf/view?usp=sharing"
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/18eQW7sQEFCN7XbJyBotkz6KmTCYnkoVV/view?usp=sharing"
+    },
+    {
+      title: "Oracle Data Platform 2025 Certified Foundations Associate",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1y3VTxeVLaHMd4yCQv6-vO1QdwtiLR2mY/view?usp=sharing"
+    },
+    {
+      title: "Oracle Database@AWS Certified Architect Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1K61Sufe7uAlZcmeOxNQty66jV3riirZM/view?usp=sharing"
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2025 Migration Architect Certified Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/14WTn4q3qRSqdczmGr_2wIAOkZRB2eZkw/view?usp=sharing"
+    },
+    {
+      title: "Oracle APEX Cloud Developer Certified Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1KRFu-DTBu6joB29RuVJChC0GxzXtnUf2/view?usp=sharing"
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1y6THHnPpXL0v_d_9JA0_6z92gxXsGF_V/view?usp=sharing"
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2025 Certified Architect Associate",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1-bp-DBGecg6iSgnBEX9KK0Ghbk43mq9v/view?usp=sharing"
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1QNKlKFgDmGcPR1B-ig8cfl2ipq2v7Xc0/view?usp=sharing"
+    },
+     {
+      title: "Oracle Cloud Infrastructure 2025 Certified Multicloud Architect Professional",
+      issuer: "Oracle", 
+      category: "AI/ML",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1fmwvPJa2P_mdiYuZqWDQHv4AfWyXIURo/view?usp=sharing"
+    },
+    {
       title: "Enhancing Soft Skills and Personality",
       issuer: "NPTEL",
       category: "Professional Development",
