@@ -13,7 +13,7 @@ import Deloittecert from '@/assets/Deloitte-cert.png';
 const CertificationsSection = () => {
   const [visibleCount, setVisibleCount] = useState(6);
 
-   const showMore = () => setVisibleCount(certifications.length);
+  const showMore = () => setVisibleCount((prev) => prev + 6);
 
   const certifications = [
     {
@@ -262,7 +262,7 @@ const CertificationsSection = () => {
 
           {/* Certifications Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certifications.map((cert, index) => (
+            {certifications.slice(0, visibleCount).map((cert, index) => (
               <div 
                 key={index}
                 className={`group glass-card p-6 rounded-3xl hover:shadow-glow hover:scale-105 transition-all duration-500 animate-fade-in-up ${
