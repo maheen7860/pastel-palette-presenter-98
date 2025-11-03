@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Award, ExternalLink, CheckCircle } from 'lucide-react';
 import tcsIonCert from '@/assets/tcs-ion-cert.png';
 import udemyCert from '@/assets/udemy-cert.png';
@@ -10,6 +11,10 @@ import infosysCert from '@/assets/infosys-cert.png';
 import nptelCert from '@/assets/nptel-cert.png';
 import Deloittecert from '@/assets/Deloitte-cert.png';
 const CertificationsSection = () => {
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const showMore = () => setVisibleCount(certifications.length);
+
   const certifications = [
     {
       title: "Artificial Intelligence Primer",
@@ -220,12 +225,21 @@ const CertificationsSection = () => {
                       </button>
                   </div>
                 </div>
-
-                {/* Hover Effects */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-accent/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             ))}
           </div>
+
+                {/* Show More Button */}
+                  {visibleCount < certifications.length && (
+            <div className="text-center mt-10">
+              <button
+                onClick={showMore}
+                className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Show More
+              </button>
+            </div>
+          )}
 
           {/* Special Achievement */}
           <div className="mt-16 text-center animate-fade-in-up stagger-4">
