@@ -13,7 +13,8 @@ import Deloittecert from '@/assets/Deloitte-cert.png';
 const CertificationsSection = () => {
   const [visibleCount, setVisibleCount] = useState(6);
 
-  const showMore = () => setVisibleCount(certifications.length);
+    const toggleShowMore = () =>
+    setVisibleCount((prev) => (prev === 6 ? certifications.length : 6));
 
   const certifications = [
     {
@@ -233,7 +234,7 @@ const CertificationsSection = () => {
                   {visibleCount < certifications.length && (
             <div className="text-center mt-10">
               <button
-                onClick={showMore}
+                onClick={toggleShowMore}
                 className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Show More
