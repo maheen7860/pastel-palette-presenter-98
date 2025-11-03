@@ -318,16 +318,25 @@ const CertificationsSection = () => {
           </div>
 
                 {/* Show More Button */}
-                  {visibleCount < certifications.length && (
-            <div className="text-center mt-10">
-              <button
-                onClick={showMore}
-                className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Show More
-              </button>
-            </div>
-          )}
+                 {visibleCount < certifications.length ? (
+  <div className="text-center mt-10">
+    <button
+      onClick={() => setVisibleCount(prev => prev + 6)}
+      className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Show More
+    </button>
+  </div>
+) : certifications.length > 6 && (
+  <div className="text-center mt-10">
+    <button
+      onClick={() => setVisibleCount(6)}
+      className="px-8 py-3 bg-gradient-to-r from-gray-300 to-gray-500 text-white font-medium rounded-full hover:from-gray-400 hover:to-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Show Less
+    </button>
+  </div>
+)}
 
           {/* Special Achievement */}
           <div className="mt-16 text-center animate-fade-in-up stagger-4">
